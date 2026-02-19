@@ -1,0 +1,65 @@
+// Program Name: OOPSBannerAppUC6
+// Use Case: UC6 - Static Functions
+// Description: Displays "OOPS" banner using static helper methods
+// to generate character patterns and improved modular structure.
+
+public class OOPSBannerAppUC6 {
+
+    public static void main(String[] args) {
+
+        String[] letterO = buildO();
+        String[] letterP = buildP();
+        String[] letterS = buildS();
+
+        // Total 7 lines banner
+        for (int i = 0; i < letterO.length; i++) {
+
+            // Printing: O O P S
+            System.out.println(
+                    letterO[i] + "   " +
+                    letterO[i] + "   " +
+                    letterP[i] + "   " +
+                    letterS[i]
+            );
+        }
+    }
+
+    // Static method to build letter O
+    public static String[] buildO() {
+        return new String[]{
+                " ***** ",
+                "*     *",
+                "*     *",
+                "*     *",
+                "*     *",
+                "*     *",
+                " ***** "
+        };
+    }
+
+    // Static method to build letter P
+    public static String[] buildP() {
+        return new String[]{
+                " ***** ",
+                "*     *",
+                "*     *",
+                " ***** ",
+                "*      ",
+                "*      ",
+                "*      "
+        };
+    }
+
+    // Static method to build letter S
+    public static String[] buildS() {
+        return new String[]{
+                " ***** ",
+                "*      ",
+                "*      ",
+                " ***** ",
+                "      *",
+                "      *",
+                " ***** "
+        };
+    }
+}
